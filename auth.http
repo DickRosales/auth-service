@@ -1,0 +1,25 @@
+POST http://localhost:7000/auth/in HTTP/1.1
+content-type: application/json
+
+{
+    "email": "theenumber5@gmail.com",
+    "password": "Dodgers4ever"
+}
+
+###
+
+POST http://localhost:7000/auth/up HTTP/1.1
+content-type: application/json
+
+{
+    "email":  "theenumber5@gmail.com",
+    "first_name": "Richard",
+    "last_name":   "Rosales",
+    "picture": "",
+    "password": "Dodgers4ever"
+}
+
+# expired
+# Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IiN7VVNFUl9JRH0iLCJlbWFpbCI6IiN7VVNFUl9FTUFJTH0iLCJmaXJzdF9uYW1lIjoiI3tVU0VSX0ZJUlNUX05BTUV9IiwibGFzdF9uYW1lIjoiI3tVU0VSX0xBU1RfTkFNRX0iLCJuYW1lIjoiI3tVU0VSX05BTUV9IiwicGljdHVyZSI6IiN7VVNFUl9QUk9GSUxFX1BJQ1RVUkV9Iiwicm9sZXMiOnsiI3tST0xFX05BTUV9IjoiI3tST0xFX0lEfSJ9LCJwZXJtaXNzaW9ucyI6eyIje1BFUk1JU1NJT05fTkFNRX0iOiIje1BFUk1JU1NJT05fSUR9In0sImlhdCI6MTU4NzAyODcwNCwiZXhwIjoxNTg3MDMyMzA0fQ.sw-PT3Zjo5nhPydIdlYhlgE0rSePQu-LgGp2_4cua24
+# new
+# Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTAyYzE5OTVmODc5MzJiMTk4NWRiMyIsImVtYWlsIjoidGhlZW51bWJlcjNAZ21haWwuY29tIiwiZmlyc3RfbmFtZSI6IlJpY2hhcmQiLCJsYXN0X25hbWUiOiJSb3NhbGVzIiwicGljdHVyZSI6IiIsImlhdCI6MTU4NzU1NTM1MywiZXhwIjoxNTg3NTU4OTUzfQ.XGXkonq0922le-Vp-3nBotmKWDC1W9ZtwMqwYMXFPbQ
