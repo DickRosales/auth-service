@@ -1,22 +1,22 @@
-POST http://localhost:7000/auth/in HTTP/1.1
+POST http://localhost:7010/auth/in HTTP/1.1
 content-type: application/json
 
 {
-    "email": "theenumber5@gmail.com",
-    "password": "Dodgers4ever"
+    "email": "theenumber3@gmail.com",
+    "password": "Password1"
 }
 
 ###
 
-POST http://localhost:7000/auth/up HTTP/1.1
+POST http://localhost:7010/auth/up HTTP/1.1
 content-type: application/json
 
 {
-    "email":  "theenumber5@gmail.com",
+    "email":  "theenumber3@gmail.com",
     "first_name": "Richard",
     "last_name":   "Rosales",
     "picture": "",
-    "password": "Dodgers4ever"
+    "password": "Password1"
 }
 
 # expired

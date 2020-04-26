@@ -20,14 +20,16 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+
 app.use('/auth', authRouter);
+app.use('/asset', authRouter);
 
 app.use(errorHandler);
 app.use(notFoundHandler);
 
 const connection = async () => {
   try {
-     await mongoose.connect('mongodb+srv://auth_user:Dodgers4ever@auth-service-f0txg.gcp.mongodb.net/mixlab?retryWrites=true&w=majority', { useNewUrlParser: true });
+     await mongoose.connect(`${process.env.DATABASE_CONNECTION}?retryWrites=true&w=majority`, { useNewUrlParser: true });
      //Get the default connection
     var db = mongoose.connection;
 

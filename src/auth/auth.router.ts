@@ -27,7 +27,7 @@ authRouter.post("/in", async (req: Request, res: Response) => {
   } catch (error) {
     
     console.log('endpoint: /auth/in', error);
-    res.status(404).send(error.message);
+    res.status(401).send(error.message);
   }
 });
 
@@ -47,6 +47,6 @@ authRouter.post("/up", async (req: Request, res: Response) => {
   } catch (error) {
 
     console.log('endpoint: /auth/up', error);
-    res.status(404).send(error.message);
+    res.status(400).send(error.message);
   }
 });
